@@ -1,5 +1,5 @@
 import java.util.*;
-public class inverpattern {
+public class array {
 
     public static void pattern(int row, int col) {
         
