@@ -17,7 +17,7 @@ public class linearsearch {
         if (index == -1) {
             System.out.print("System not found");
         }
-        else {
+        else { 
             System.out.print(index);
         }
     }
