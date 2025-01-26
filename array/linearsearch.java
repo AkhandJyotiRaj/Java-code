@@ -11,7 +11,7 @@ public class linearsearch {
     }
     public static void main(String args[]) {
         int number[] = { 1, 4, 2, 4, 3, 4, 5, 5, 3, 4, 4,4,10 };
-        int key = 11;
+        int key = 10;
 
         int index = linear(number, key);
         if (index == -1) {
