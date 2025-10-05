@@ -2,7 +2,7 @@ public class second_largest {
     
     public static void main(String[] args) {
         
-        int[] arr = { 3, 5, 2, 5, 6, 1, 19, 2, 20 };
+        int[] arr = { 3, 5,20, 2, 5, 6, 1, 19, 2, };
         
         int max = Integer.MIN_VALUE;
         int smax = Integer.MIN_VALUE;
