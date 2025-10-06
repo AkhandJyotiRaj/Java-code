@@ -29,6 +29,7 @@ public class revest_array {
         int[] arr = { 1, 3, 5, 6, 7, 8, 9, 12, 13, 15 };
         int[] ans = { 3, 2, 5, 6, 3, 6, 7, 8 };
         swap(ans);
+        swap(arr);
         
     }
 }

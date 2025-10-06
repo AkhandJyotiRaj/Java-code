@@ -29,6 +29,7 @@ public class linearsrach {
                 break;
             }
         }
+        sc.close();
         
     }
 }
