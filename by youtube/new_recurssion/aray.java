@@ -1,11 +1,13 @@
     public class aray {
 
-        public static int printt(int[] arr, int n) {
+        public static void printt(int[] arr, int n) {
             if (n == arr.length)
-                return 0;
-            System.out.print(arr[n] +" ");
+                return;
+            
 
-            return printt(arr, n + 1);
+           printt(arr, n + 1);
+
+            System.out.print(arr[n] +" ");
         }
         
         public static void main(String[] args) {
