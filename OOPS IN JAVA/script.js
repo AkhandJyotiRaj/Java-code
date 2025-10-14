@@ -115,10 +115,11 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Simulate API call
             setTimeout(() => {
-                // Simulate successful login
+                // Simulate successful login and redirect
                 showSuccessMessage();
-                loginBtn.classList.remove('loading');
-                loginBtn.disabled = false;
+                setTimeout(() => {
+                    window.location.href = 'shopping.html';
+                }, 1500);
             }, 2000);
         }
     });
@@ -314,3 +315,19 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     document.head.appendChild(rippleStyle);
 });
+
+// Direct redirect function for onclick event
+function redirectToShopping() {
+    // Show loading state
+    const loginBtn = document.querySelector('.login-btn');
+    loginBtn.classList.add('loading');
+    loginBtn.disabled = true;
+    
+    // Simulate login process
+    setTimeout(() => {
+        showSuccessMessage();
+        setTimeout(() => {
+            window.location.href = 'shopping.html';
+        }, 1500);
+    }, 1000);
+}
