@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Modern Web App</title>
+    <title>Sign In - TechCorp</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Company Header -->
+    <header class="company-header">
+        <div class="header-container">
+            <div class="company-logo">
+                <i class="fas fa-cube"></i>
+                <span>TechCorp</span>
+            </div>
+            <nav class="header-nav">
+                <a href="#" class="nav-link">Products</a>
+                <a href="#" class="nav-link">Solutions</a>
+                <a href="#" class="nav-link">Enterprise</a>
+                <a href="#" class="nav-link">Support</a>
+            </nav>
+        </div>
+    </header>
+
     <div class="login-container">
         <div class="login-card">
             <div class="login-header">
                 <div class="logo">
-                    <i class="fas fa-shield-alt"></i>
+                    <i class="fas fa-cube"></i>
                 </div>
-                <h1>Welcome Back</h1>
-                <p>Sign in to your account to continue</p>
+                <h1>Welcome to TechCorp</h1>
+                <p>Sign in to access your enterprise dashboard</p>
             </div>
             
             <form class="login-form" id="loginForm">
@@ -58,19 +74,42 @@
                 </div>
                 
                 <div class="social-login">
+                    <button type="button" class="social-btn microsoft-btn">
+                        <i class="fab fa-microsoft"></i>
+                        Continue with Microsoft
+                    </button>
                     <button type="button" class="social-btn google-btn">
                         <i class="fab fa-google"></i>
                         Continue with Google
-                    </button>
-                    <button type="button" class="social-btn github-btn">
-                        <i class="fab fa-github"></i>
-                        Continue with GitHub
                     </button>
                 </div>
             </form>
             
             <div class="login-footer">
-                <p>Don't have an account? <a href="shopping.html" class="signup-link">Sign up here</a></p>
+                <p>New to TechCorp? <a href="shopping.html" class="signup-link">Create an account</a></p>
+                <div class="security-info">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Enterprise-grade security</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Company Features -->
+        <div class="company-features">
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Enterprise Security</h3>
+                <p>Bank-level encryption and security protocols</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Infrastructure</h3>
+                <p>Scalable and reliable cloud solutions</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-users"></i>
+                <h3>Team Collaboration</h3>
+                <p>Advanced tools for enterprise teams</p>
             </div>
         </div>
         
@@ -80,6 +119,56 @@
             <div class="circle circle-3"></div>
         </div>
     </div>
+
+    <!-- Company Footer -->
+    <footer class="company-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#">Enterprise Suite</a></li>
+                    <li><a href="#">Cloud Platform</a></li>
+                    <li><a href="#">Security Solutions</a></li>
+                    <li><a href="#">API Management</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Compliance</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 TechCorp. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
     
     <script src="script.js"></script>
 </body>
