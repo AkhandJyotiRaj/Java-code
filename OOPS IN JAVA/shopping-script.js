@@ -221,7 +221,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function showUserMenu() {
-        showNotification('Opening user menu...', 'info');
+        // Redirect to login page
+        window.location.href = 'login.html';
     }
 
     // Update cart badge
