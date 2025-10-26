@@ -45,14 +45,23 @@ public class singlelinkedlist {
             System.out.print(currNode.data + " --> ");
             currNode = currNode.next;
         }
-        System.out.println( "Null");
+        System.out.println("Null");
     }
 
+    public void printrec(Node head) {
+        if (head == null) {
+            return;
+        }
+        printrec(head.next);
+        System.out.print(head.data + " --> ");
+    }
+    
     public static void main(String[] args) {
         singlelinkedlist list = new singlelinkedlist();
         list.addfirst(12);
         list.addfirst(14);
         list.addlast(100);
+        // list.printls();
         list.printls();
     }
 }
