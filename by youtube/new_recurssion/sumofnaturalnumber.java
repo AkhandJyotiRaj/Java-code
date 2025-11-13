@@ -6,7 +6,7 @@ public class sumofnaturalnumber {
             return ans;
         return sum(n / 10, n % 10 + ans);
     }
-    
+        
     public static void main(String[] args) {
         
         int n = 3456;
