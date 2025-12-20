@@ -18,7 +18,7 @@ public class TowerOfHanoi {
     }
 
     public static void main(String[] args) {
-        int n = 3;  // number of disks
+        int n = 2;  // number of disks
         solve(n, 'A', 'C', 'B');  // A = source, C = destination, B = auxiliary
     }
 }
