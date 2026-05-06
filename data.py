@@ -21,6 +21,7 @@ def get_random_date(start_date, end_date):
 start_date = date(2025, 1, 1)
 end_date = date(2025, 12, 31)
 
+
 for i in range(2000):
     gender = random.choice(['Male', 'Female'])
     name = fake.name_male() if gender == 'Male' else fake.name_female()

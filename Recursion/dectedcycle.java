@@ -16,6 +16,7 @@ public class dectedcycle {
 
     public static void rotateLeft(int[] arr, int m) {
         int n = arr.length;
+        // add new some thing
         m = m % n; // Handle cases where m is greater than n
 
         // Create a temporary array to hold the rotated elements
