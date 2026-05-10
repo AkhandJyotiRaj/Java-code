@@ -41,26 +41,47 @@ public class sizeoftree {
         preorder(root.right);
     }
 
+    public static int height(Node root) {
+        if (root == null)
+            return -1;
+        return Math.max(height(root.left), height(root.right)) + 1;
+    }
+    
+    public static int minval(Node root) {
+        if (root == null)
+            return Integer.MAX_VALUE;
+        return Math.min(root.val, Math.min(minval(root.left), minval(root.right)));
+    }
+    
+    public static int project(Node root) {
+        if (root == null)
+            return 1;
+        return root.val * project(root.left) * project(root.right);
+    }
+
+
     public static void main(String[] args) {
-        Node root = new Node(5);
-        Node a = new Node(1);
-        Node b = new Node(2);
+        Node root = new Node(1);
+        Node a = new Node(2);
+        Node b = new Node(3);
         root.left = a;
         root.right = b;
-        Node c = new Node(3);
-        Node d = new Node(4);
+        Node c = new Node(4);
+        Node d = new Node(5);
         a.left = c;
         a.right = d;
-        Node e = new Node(50);
-        Node f = new Node(6);
+        Node e = new Node(6);
+        Node f = new Node(7);
         b.left = e;
         b.right = f;
         // display(root);
-        // preorder(root);
+        preorder(root);
         // System.out.println(size(root));
-        System.out.println(sumof(root));
-        System.out.println(maxval(root));
+        // System.out.println(sumof(root));
+        // System.out.println(maxval(root));
+        // System.out.println(height(root));
+        // System.out.println(minval(root));
+        // System.out.println(project(root));
     }
 }
 
-1:21:08 time span
