@@ -1,0 +1,41 @@
+public class printhtleve {
+    
+    public static class Node {
+        int val;
+        Node left; // null;
+        Node right;
+
+        Node(int val) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
+    public static void pri(Node root,int n) {
+        if (root == null)
+            return;
+        if(n==1) System.out.print(root.val+" ");
+        pri(root.left,n-1);
+        pri(root.right,n-1);
+    }
+    
+
+    public static void main(String[] args) {
+        Node root = new Node(1);
+        Node a = new Node(2);
+        Node b = new Node(3);
+        root.left = a;
+        root.right = b;
+        Node c = new Node(4);
+        Node d = new Node(5);
+        a.left = c;
+        a.right = d;
+        Node e = new Node(6);
+        Node f = new Node(7);
+        b.left = e;
+        b.right = f;
+        pri(root,3);
+
+    }
+}
